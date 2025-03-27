@@ -409,8 +409,9 @@ func createDellPowerMaxCapabilities() []StorageCapabilities {
 	return []StorageCapabilities{
 		{rwx, block},
 		{rwo, block},
+		{rwx, file},
 		{rwo, file},
-		{rox, block},
+		{rox, file},
 	}
 }
 
@@ -418,9 +419,7 @@ func createDellPowerFlexCapabilities() []StorageCapabilities {
 	return []StorageCapabilities{
 		{rwx, block},
 		{rwo, block},
-		{rwo, file},
 		{rox, block},
-		{rox, file},
 	}
 }
 
@@ -436,8 +435,9 @@ func createDellPowerStoreCapabilities() []StorageCapabilities {
 	return []StorageCapabilities{
 		{rwx, block},
 		{rwo, block},
+		{rwx, file},
 		{rwo, file},
-		{rox, block},
+		{rox, file},
 	}
 }
 
